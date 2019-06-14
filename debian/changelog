@@ -1,0 +1,6 @@
+hiera-py (0.0.1+git3dba5f-1) UNRELEASED; urgency=medium
+
+  * Closes: #930973
+  * [a58b7b0] New upstream version 0.0.1
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 06 Jun 2019 22:23:28 +0200

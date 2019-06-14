@@ -1,0 +1,4 @@
+# source                                         # target
+#/usr/lib/python3/dist-packages/sphinx_rtd_theme  usr/share/doc/python-hiera-doc/html/themes/sphinx_rtd_theme 
+/usr/share/javascript/jquery/jquery.js            usr/share/doc/python-hiera-doc/html/_static/jquery.js
+/usr/share/javascript/underscore/underscore.js    usr/share/doc/python-hiera-doc/html/_static/underscore.js

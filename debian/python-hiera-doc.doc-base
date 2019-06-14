@@ -1,0 +1,14 @@
+Document: python-hiera-doc
+Title: Documentation of hiera-py Python library
+Author: Thomas Van Doren
+Abstract: Documentation for the Python interfaces for the hiera hierarchical database.
+Section: Help/HOWTO
+
+Format: HTML
+Index: /usr/share/doc/python-hiera-doc/html/index.html
+Files: /usr/share/doc/python-hiera-doc/html/*.html
+       /usr/share/doc/python-hiera-doc/html/objects.inv
+       /usr/share/doc/python-hiera-doc/html/_static/*.css
+       /usr/share/doc/python-hiera-doc/html/_static/*.gif
+       /usr/share/doc/python-hiera-doc/html/_static/*.png
+       /usr/share/doc/python-hiera-doc/html/_static/*.js

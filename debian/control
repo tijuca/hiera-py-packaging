@@ -1,0 +1,71 @@
+Source: hiera-py
+Section: python
+Priority: optional
+Maintainer: Carsten Schoenert <c.schoenert@t-online.de>
+Build-Depends:
+ debhelper (>= 12),
+ dh-python,
+ python,
+ python-mock,
+ python-setuptools,
+ python3,
+ python3-mock,
+ python3-setuptools,
+ python3-sphinx <!nodoc>,
+Vcs-Git: https://salsa.debian.org/tijuca/hiera-py.git
+Vcs-Browser: https://salsa.debian.org/tijuca/hiera-py
+Standards-Version: 4.3.0
+Homepage: https://github.com/agx/hiera-py
+
+Package: python-hiera-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends},
+ libjs-jquery,
+ libjs-underscore,
+Description: Documentation of the Python interface for the hiera hierarchical database
+ This package contains the Sphinx based HTML documentation for the libraries
+ python-hiera (Python2) and python3-hiera (Python3).
+ .
+ The documentation is build as a single HTML file which can be found as
+ /usr/share/doc/python-hiera-doc/html/index.html.
+
+Package: python-hiera
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+Description: Python language bindings for the hiera hierarchical database (Python 2)
+ Hiera is a key/value lookup tool for configuration data, often used in Puppet
+ and created and built to make Puppet better and let you set node-specific data
+ without repeating yourself.
+ .
+ Hiera’s hierarchical lookups follow a “defaults, with overrides” pattern,
+ meaning you specify common data once, and override it in situations where the
+ default won’t work.
+ .
+ The hierarchical data can be organised as JSON, YAML, and EYAML files.
+ .
+ This package installs the library for Python 2 of the hiera bindings to work
+ with formatted hierarchical data.
+
+Package: python3-hiera
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Python language bindings for the hiera hierarchical database (Python 3)
+ Hiera is a key/value lookup tool for configuration data, often used in Puppet
+ and created and built to make Puppet better and let you set node-specific data
+ without repeating yourself.
+ .
+ Hiera’s hierarchical lookups follow a “defaults, with overrides” pattern,
+ meaning you specify common data once, and override it in situations where the
+ default won’t work.
+ .
+ The hierarchical data can be organised as JSON, YAML, and EYAML files.
+ .
+ This package installs the library for Python 3 of the hiera bindings to work
+ with formatted hierarchical data.
+
