@@ -36,6 +36,7 @@ Architecture: all
 Depends:
  ${misc:Depends},
  ${python:Depends},
+ hiera,
 Description: Python language bindings for the hiera hierarchical database (Python 2)
  Hiera is a key/value lookup tool for configuration data, often used in Puppet
  and created and built to make Puppet better and let you set node-specific data
@@ -55,6 +56,7 @@ Architecture: all
 Depends:
  ${misc:Depends},
  ${python3:Depends},
+ hiera,
 Description: Python language bindings for the hiera hierarchical database (Python 3)
  Hiera is a key/value lookup tool for configuration data, often used in Puppet
  and created and built to make Puppet better and let you set node-specific data
