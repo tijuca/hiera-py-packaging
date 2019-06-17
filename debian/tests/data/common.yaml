@@ -1,0 +1,6 @@
+# simple basic test data for hiera-py
+
+---
+default_layer1:
+  subject: "Data for default_layer1"
+

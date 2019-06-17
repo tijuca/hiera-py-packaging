@@ -1,0 +1,3 @@
+Tests: smoke
+Depends: puppet, python-hiera, python3-hiera
+Restrictions: allow-stderr

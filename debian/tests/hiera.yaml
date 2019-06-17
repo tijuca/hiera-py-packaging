@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+ 
+:hierarchy:
+  - "%{osfamily}"
+  - common
+ 
+:yaml:
+  :datadir: data

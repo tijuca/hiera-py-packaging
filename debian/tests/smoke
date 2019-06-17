@@ -1,0 +1,45 @@
+#!/bin/bash
+
+set -e
+#set -x
+
+EXITSTATUS=0
+
+cd debian/tests
+
+echo "#######################################################################"
+echo "# Testing python-hiera package...                                     #"
+echo "#######################################################################"
+if python hiera_check.py; then
+    echo "#######################################################################"
+    echo "#    ---> Smoke test of package python-hiera was successful! <---     #"
+    echo "# Testing python-hiera package... done.                               #"
+    echo "#######################################################################"
+else
+    echo "#######################################################################"
+    echo "#       ---> Smoke test of package python-hiera FAILED! <---          #"
+    echo "#######################################################################"
+    EXITSTATUS=1
+fi
+
+echo
+echo "#######################################################################"
+echo "# Testing python3-hiera package...                                    #"
+echo "#######################################################################"
+if python3 hiera_check.py; then
+    echo "#######################################################################"
+    echo "#    --> Smoke test of package python3-hiera was successful! <---     #"
+    echo "# Testing python3-hiera package... done.                              #"
+    echo "#######################################################################"
+else
+    echo "#######################################################################"
+    echo "#      ---> Smoke test of package python3-hiera FAILED! <---          #"
+    echo "#######################################################################"
+    EXITSTATUS=1
+fi
+
+if [ "${EXITSTATUS}" = "1" ]; then
+    exit 1
+else
+    exit 0
+fi
